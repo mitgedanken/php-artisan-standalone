@@ -1,48 +1,51 @@
 {
-    "name": "matthewbdaly/artisan-standalone",
-    "description": "Allows you to use Artisan outside of a Laravel install",
-    "type": "library",
-    "keywords": ["laravel","lumen"],
-    "require": {
-        "laravel/tinker": "^1.0"
-    },
-    "require-dev": {
-        "mockery/mockery": "~1.0",
-        "orchestra/testbench": "4.0",
-        "phpunit/phpunit": "^8.0",
-        "psy/psysh": "^0.9.9",
-        "squizlabs/php_codesniffer": "^3.4"
-    },
-    "bin": [
-        "artisan"
-    ],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Matthew Daly",
-            "email": "matthewbdaly@gmail.com"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Matthewbdaly\\ArtisanStandalone\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
-    },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "optimize-autoloader": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Matthewbdaly\\ArtisanStandalone\\Providers\\ServiceProvider"
-            ]
-        }
+  "name": "matthewbdaly/artisan-standalone",
+  "description": "Allows you to use Artisan outside of a Laravel install",
+  "type": "library",
+  "keywords": [
+    "laravel",
+    "lumen"
+  ],
+  "require": {
+    "laravel/tinker": "^1.0"
+  },
+  "require-dev": {
+    "mockery/mockery": "~1.0",
+    "orchestra/testbench": "4.0",
+    "phpunit/phpunit": "^8.0",
+    "psy/psysh": "^0.9.9",
+    "squizlabs/php_codesniffer": "^3.4"
+  },
+  "bin": [
+    "artisan"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Matthew Daly",
+      "email": "matthewbdaly@gmail.com"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Matthewbdaly\\ArtisanStandalone\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Matthewbdaly\\ArtisanStandalone\\Providers\\ServiceProvider"
+      ]
+    }
+  }
 }
